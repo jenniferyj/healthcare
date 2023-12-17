@@ -197,24 +197,36 @@ input {
     padding: 8px 10px 6px 10px;
     font-size: 13px;
   }
-  .sub_wrap .content-wrap .content-wrap-body .tab-contents {
-    width: 100%;
-  }
-  .sub_wrap .content-wrap .content-wrap-body .tab-contents .tab-item {
-    width: 50%;
+  .sub_wrap .content-wrap .content-wrap-body ul li {
+    width: 49%;
     font-size: 16px;
   }
-  .sub_wrap .content-wrap .content-wrap-body .tab-contents .card-1 {
+  .sub_wrap .content-wrap .content-wrap-body .tab-content .card-1 {
     margin-right: 0;
   }
-  .sub_wrap .content-wrap .content-wrap-body .tab-contents .card-1 .card-body {
+  .sub_wrap .content-wrap .content-wrap-body .tab-content .card-1 .card-body {
     padding: 20px 24px;
   }
-  .sub_wrap .content-wrap .content-wrap-body .tab-contents .card-1 .card-body ul li {
+  .sub_wrap .content-wrap .content-wrap-body .tab-content .card-1 .card-body ul li {
     font-size: 14px;
   }
   table th, table td {
     font-size: 14px;
     padding: 12px 6px;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .search-box .dropdown button.dropbtn {
+    font-size: 14px;
+  }
+  .search-box .dropdown .dropdown-content a {
+    font-size: 14px;
+  }
+  .search-box .search-field {
+    width: 100%;
+  }
+  .search-box .search-field input {
+    font-size: 14px;
   }
 }

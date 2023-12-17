@@ -36,17 +36,22 @@ $(function() {
 		});
 	});
 
+	/* Tab Menu */
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	});
+
 	/* Data Table */
 	$('#dataTable_ex').DataTable();
 
-	/* Search box */
-	$('.default_option').click(function(){
-		$('.dropdown ul').addClass('active');
-	});
-	
-	$('.dropdown ul li').click(function(){
-		var text = $(this).text();
-		$('.default_option').text(text);
-		$('.dropdown ul').removeClass('active');
+	/* Search Dropdown Menu */
+	$('.dropbtn').click(function(){
+		$('.dropdown-content').addClass('active');
 	});
 });

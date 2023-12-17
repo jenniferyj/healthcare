@@ -36,186 +36,180 @@
                 </div>
                 <div class="content-wrap-body">
                     <!-- Tab Menu -->
-                    <div class="tab-contents">
-                        <input id="tab-1" type="radio" name="tab-item" checked>
-                        <label class="tab-item" for="tab-1">공통 데이터</label>
-                        <input id="tab-2" type="radio" name="tab-item">
-                        <label class="tab-item" for="tab-2">개인별 데이터</label>
-                        <div class="clear"></div>
-                        <!-- tab 1 -->
-                        <div id="tab-b1">
-                            <div class="card-1">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>전체 교육 참여율(%) : 혼자하기로 진입한 교육생 중, 학습을 참여한 사람을 파악하기 위한 그래프</li>
-                                        <li>전체 교육 진도율(%) : 혼자하기로 진입한 교육생 중, 학습을 2개 이상 진행하고 있는 사람 수 파악</li>
-                                        <li>전체 교육 완료율(%) : 혼자하기로 진입한 교육생 중, 교육에 있는 학습을 모두 완료한 사람 수 파악 <br>
-                                            [혼자하기] 기반의 데이터
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Dashboard : charts -->
-                            <div class="dashboard">
-                                <div class="item">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <div>
-                                                <h3>전체 교육 참여율(%)</h3>
-                                            </div>
-                                            <div class="right-info">
-                                                <div class="selectbox">
-                                                    <select name="" id="">
-                                                        <option value="">소개 및 기능</option>
-                                                        <option value="">기본 교육</option>
-                                                        <option value="">GCP 교육</option>
-                                                    </select>
-                                                </div>
-                                                <button class="btn btn-sm rounded btn-select-primary active">일별</button>
-                                                <button class="btn btn-sm rounded btn-select-primary">월별</button>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <!-- chart -->
-                                            <img src="/images/chart-1.png" class="img-responsive" alt="chart">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <div>
-                                                <h3>전체 교육 진도율(%)</h3>
-                                            </div>
-                                            <div class="right-info">
-                                                <div class="selectbox">
-                                                    <select name="" id="">
-                                                        <option value="">소개 및 기능</option>
-                                                        <option value="">기본 교육</option>
-                                                        <option value="">GCP 교육</option>
-                                                    </select>
-                                                </div>
-                                                <button class="btn btn-sm rounded btn-select-primary">일별</button>
-                                                <button class="btn btn-sm rounded btn-select-primary active">월별</button>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <!-- chart -->
-                                            <img src="/images/chart-1.png" class="img-responsive" alt="chart">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item" style="width: 100%;">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <div>
-                                                <h3>전체 교육 완료율(%)</h3>
-                                            </div>
-                                            <div class="right-info">
-                                                <button class="btn btn-sm rounded btn-select-primary active">일별</button>
-                                                <button class="btn btn-sm rounded btn-select-primary">월별</button>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <!-- chart -->
-                                            <img src="/images/chart-5.png" class="img-responsive" alt="chart">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /End: Dashboard : charts -->
-                        </div>
-                        <!-- /End: tab 1 -->
-
-                        <!-- tab 2 -->
-                        <div id="tab-b2">
-                            <div class="card-1">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>교육생 개인별 데이터를 출력합니다. <br>
-                                            [커리큘럼 수강] 기반의 데이터
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card-1">
-                                <div class="card-body">
-                                    <!-- Add Assets -->
-                                    <div class="assets">
-                                        <div></div>
-                                        <form>
-                                            <!-- Search -->
-                                            <div class="search_box">
-                                                <div class="dropdown">
-                                                    <div class="default_option">전체</div>  
-                                                    <ul>
-                                                        <li>이름</li>
-                                                        <li>아이디</li>
-                                                        <li>닉네임</li>
-                                                        <li>이메일</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="search_field">
-                                                    <input type="text" class="input" name="search" placeholder="검색어를 입력해 주세요">
-                                                    <i class="material-icons">search</i>
-                                                </div>
-                                            </div>
-                                            <!-- /End: Search -->
-                                        </form>
-                                    </div>
-                                    <!-- Table -->
-                                    <div class="table-responsive">
-                                        <table id="dataTable_ex" class="table table-sttriped">
-                                            <thead>
-                                                <tr>
-                                                    <th>No.</th>
-                                                    <th>이름</th>
-                                                    <th>아이디</th>
-                                                    <th>닉네임</th>
-                                                    <th>이메일</th>
-                                                    <th>전체 학습 진도율</th>
-                                                    <th>학습 상세 데이터</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>00</td>
-                                                    <td>{name}</td>
-                                                    <td>{id}</td>
-                                                    <td>{nickname}</td>
-                                                    <td>{email}</td>
-                                                    <td>{00} %</td>
-                                                    <td>{00} %</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>01</td>
-                                                    <td>홍길동</td>
-                                                    <td>gildong</td>
-                                                    <td>길동이</td>
-                                                    <td>gildong@tmax.co.kr</td>
-                                                    <td>47 %</td>
-                                                    <td>60 %</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>02</td>
-                                                    <td>김길순</td>
-                                                    <td>sooni</td>
-                                                    <td>길수니</td>
-                                                    <td>sooni@gmail.com</td>
-                                                    <td>32 %</td>
-                                                    <td>49 %</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- /End: Table -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /End: tab 2 -->
-                    </div>
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1">공통 데이터</li>
+                        <li class="tab-link" data-tab="tab-2">개인별 데이터</li>
+                    </ul>
                     <!-- /End: Tab Menu -->
+                    
+                    <!-- tab 1 -->
+                    <div id="tab-1" class="tab-content current">
+                        <div class="card-1">
+                            <div class="card-body">
+                                <span>• 전체 교육 참여율(%) : 혼자하기로 진입한 교육생 중, 학습을 참여한 사람을 파악하기 위한 그래프</span> <br>
+                                <span>• 전체 교육 진도율(%) : 혼자하기로 진입한 교육생 중, 학습을 2개 이상 진행하고 있는 사람 수 파악</span> <br>
+                                <span>• 전체 교육 완료율(%) : 혼자하기로 진입한 교육생 중, 교육에 있는 학습을 모두 완료한 사람 수 파악 <br>
+                                    <span class="blank"></span>[혼자하기] 기반의 데이터
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Charts -->
+                        <div class="dashboard">
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <h3>전체 교육 참여율(%)</h3>
+                                        </div>
+                                        <div class="right-info">
+                                            <div class="selectbox">
+                                                <select name="" id="">
+                                                    <option value="">소개 및 기능</option>
+                                                    <option value="">기본 교육</option>
+                                                    <option value="">GCP 교육</option>
+                                                </select>
+                                            </div>
+                                            <button class="btn btn-sm rounded btn-select-primary active">일별</button>
+                                            <button class="btn btn-sm rounded btn-select-primary">월별</button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- chart -->
+                                        <img src="/images/chart-1.png" class="img-responsive" alt="chart">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <h3>전체 교육 진도율(%)</h3>
+                                        </div>
+                                        <div class="right-info">
+                                            <div class="selectbox">
+                                                <select name="" id="">
+                                                    <option value="">소개 및 기능</option>
+                                                    <option value="">기본 교육</option>
+                                                    <option value="">GCP 교육</option>
+                                                </select>
+                                            </div>
+                                            <button class="btn btn-sm rounded btn-select-primary">일별</button>
+                                            <button class="btn btn-sm rounded btn-select-primary active">월별</button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- chart -->
+                                        <img src="/images/chart-1.png" class="img-responsive" alt="chart">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item" style="width: 100%;">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <h3>전체 교육 완료율(%)</h3>
+                                        </div>
+                                        <div class="right-info">
+                                            <button class="btn btn-sm rounded btn-select-primary active">일별</button>
+                                            <button class="btn btn-sm rounded btn-select-primary">월별</button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- chart -->
+                                        <img src="/images/chart-5.png" class="img-responsive" alt="chart">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /End: Charts -->
+                    </div>
+                    <!-- /End: tab 1 -->
+
+                    <!-- tab 2 -->
+                    <div id="tab-2" class="tab-content">
+                        <div class="card-1">
+                            <div class="card-body">
+                                <span>• 교육생 개인별 데이터를 출력합니다. <br>
+                                    <span class="blank"></span>[커리큘럼 수강] 기반의 데이터
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-1">
+                            <div class="card-body">
+                                <!-- Add Assets -->
+                                <div class="assets">
+                                    <div></div>
+                                    <form>
+                                        <!-- Search -->
+                                        <div class="search-box">
+                                            <div class="dropdown">
+                                                <button class="dropbtn">전체</button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">이름</a>
+                                                    <a href="#">아이디</a>
+                                                    <a href="#">이메일</a>
+                                                </div>
+                                            </div>
+                                            <div class="search-field">
+                                                <input type="text" placeholder="검색어를 입력해 주세요">
+                                                <i class="material-icons">search</i>
+                                            </div>
+                                        </div>
+                                        <!-- /End: Search -->
+                                    </form>
+                                </div>
+                                <!-- Table -->
+                                <div class="table-responsive">
+                                    <table id="dataTable_ex" class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>No.</th>
+                                                <th>이름</th>
+                                                <th>아이디</th>
+                                                <th>닉네임</th>
+                                                <th>이메일</th>
+                                                <th>전체 학습 진도율</th>
+                                                <th>학습 상세 데이터</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>00</td>
+                                                <td>{name}</td>
+                                                <td>{id}</td>
+                                                <td>{nickname}</td>
+                                                <td>{email}</td>
+                                                <td>{00} %</td>
+                                                <td>{00} %</td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>홍길동</td>
+                                                <td>gildong</td>
+                                                <td>길동이</td>
+                                                <td>gildong@tmax.co.kr</td>
+                                                <td>47 %</td>
+                                                <td>60 %</td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>김길순</td>
+                                                <td>sooni</td>
+                                                <td>길수니</td>
+                                                <td>sooni@gmail.com</td>
+                                                <td>32 %</td>
+                                                <td>49 %</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /End: Table -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /End: tab 2 -->
+                    
                 </div>
             </div>
             <!-- /End: Content Section -->

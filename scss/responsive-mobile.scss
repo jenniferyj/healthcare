@@ -161,12 +161,13 @@
                         }
                     }
                 }
-                .tab-contents {
-                    width: 100%;
-                    .tab-item {
-                        width: 50%;
+                ul {
+                    li {
+                        width: 49%;
                         font-size: 16px;
                     }
+                }
+                .tab-content {
                     .card-1 {
                         margin-right: 0;
                         .card-body {
@@ -186,6 +187,25 @@
         th, td {
             font-size: 14px;
             padding: 12px 6px;
+        }
+    }
+    .search-box {
+        width: 100%;
+        .dropdown {
+            button.dropbtn {
+                font-size: 14px;
+            }
+            .dropdown-content {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+        .search-field {
+            width: 100%;
+            input {
+                font-size: 14px;
+            }
         }
     }
 }
