@@ -1,0 +1,191 @@
+/* Import Local SCSS Files */ 
+@import "variables", "reset", "fonts" ;
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .btn-sm {
+        font-size: 13px;
+        padding: 8px 10px 6px 10px;
+    }
+    .front-page  {
+        background: url('/images/bg-mobile.png') no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.5s ease-out;
+        .signin {
+            .admin-login {
+                .logo {
+                    display: none;
+                }
+                .logo-sm {
+                    display: block;
+                    text-align: left;
+                    padding-left: 24px;
+                    margin-bottom: 60px;
+                    transition: all 0.5s ease-out;
+                }
+                .login-field {
+                    padding: 24px;
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .sub_wrap {
+        .menu-btn {
+            position: fixed;
+            top: 46px;
+            left: 24px;
+            z-index: 9999;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            i {
+                transition: all 0.3s ease;
+            }
+            i.close {
+                opacity: 0;
+            }
+        }
+        #btn:checked ~ .menu-btn {
+            left: 190px;
+            i.close {
+                opacity: 1;
+                transform: rotate(-180deg);
+            }
+            i.menu {
+                opacity: 0;
+                transform: rotate(180deg);
+            }
+        }
+        #btn.cehcked ~ .sidebar-nav {
+            left: 0;
+        }
+        .sidebar-nav {
+            position: fixed;
+            overflow: hidden;
+            top: 0;
+            left: -300px;
+            transition: all 0.3s ease;
+            width: 260px;
+            height: 100vh;
+            z-index: 999;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+            padding: 30px 10px 30px 24px;
+            .logo-sm {
+                margin-bottom: 30px;
+                margin-top: 10px;
+            }
+            ul {
+                li {
+                    margin-bottom: 20px;
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+            ul.sub-menu li {
+                padding: 4px 4px 4px 30px;
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+        .content-wrap {
+            width: 100%;
+            left: 0;
+            .content-wrap-header {
+                background-color: $cloudy-gray;
+                border-bottom: none;
+                padding: 30px 0 30px 0;
+                width: 100%;
+                .content-title {
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    padding-left: 24px;
+                    width: 100%;
+                    height: 56px;
+                    font-size: 16px;
+                    border-bottom: 1px solid $dim-gray;
+                    background-color: $cloudy-gray;
+                }
+                span {
+                    font-size: 14px;
+                }
+                .admin-info {
+                    position: absolute;
+                    right: 20px;
+                }
+            }
+            .content-wrap-body {
+                padding: 30px 20px 30px 24px;
+                margin-top: 50px;
+                .content-info {
+                    margin-bottom: 20px;
+                    .daily-status {
+                        font-size: 18px;
+                        span {
+                            font-size: 26px;
+                        }
+                    }
+                }
+                .dashboard {
+                    .item {
+                        width: 100%;
+                        padding: 0 0 20px 0;
+                        .card {
+                            height: auto;
+                            padding: 20px;
+                            .card-header {
+                                flex-wrap: wrap;
+                                align-items: baseline;
+                                h3 {
+                                    font-size: 17px;
+                                }
+                                span {
+                                    display: none;
+                                }
+                                .right-info {
+                                    padding-top: 10px;
+                                    .today {
+                                        padding: 8px 10px 6px 10px;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .tab-contents {
+                    width: 100%;
+                    .tab-item {
+                        width: 50%;
+                        font-size: 16px;
+                    }
+                    .card-1 {
+                        margin-right: 0;
+                        .card-body {
+                            padding: 20px 24px;
+                            ul {
+                                li {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    table {
+        th, td {
+            font-size: 14px;
+            padding: 12px 6px;
+        }
+    }
+}

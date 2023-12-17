@@ -1,0 +1,134 @@
+/* Import Local SCSS Files */
+/* Setting Variables : Font Family */
+/* Setting Variables : Text Color */
+/* Setting Variables : Object Color */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/* Font Icon : Bootstrap Icons */
+/* Google Web Fonts */
+/* === Noto Sans KR === */
+/* === Roboto Web === */
+/* === Raleway === */
+/* Spoqa Han Sans Neo Web Fonts */
+/* Pretendard Web Fonts */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Responsive for Tablet ~ Laptop */
+@media (min-width: 769px) and (max-width: 1440px) {
+  .btn-sm {
+    font-size: 14px;
+    padding: 8px 10px 6px 10px;
+  }
+  .front-page {
+    background: url("/images/bg-tablet.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .sub_wrap .menu-btn {
+    position: fixed;
+    top: 30px;
+    left: 24px;
+    z-index: 9999;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .sub_wrap .menu-btn i {
+    transition: all 0.3s ease;
+  }
+  .sub_wrap .menu-btn i.close {
+    opacity: 0;
+  }
+  .sub_wrap #btn:checked ~ .menu-btn {
+    left: 190px;
+  }
+  .sub_wrap #btn:checked ~ .menu-btn i.close {
+    opacity: 1;
+    transform: rotate(-180deg);
+  }
+  .sub_wrap #btn:checked ~ .menu-btn i.menu {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  .sub_wrap #btn:checked ~ .sidebar-nav {
+    left: 0;
+  }
+  .sub_wrap .sidebar-nav {
+    position: fixed;
+    overflow: hidden;
+    left: -300px;
+    transition: all 0.3s ease;
+    width: 260px;
+    height: 100vh;
+    z-index: 999;
+    padding: 30px 10px 30px 24px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+  }
+  .sub_wrap .content-wrap {
+    left: 0;
+    width: 100%;
+  }
+  .sub_wrap .content-wrap .content-wrap-header {
+    width: 100%;
+    padding: 30px 20px 30px 30px;
+  }
+  .sub_wrap .content-wrap .content-wrap-header .content-title {
+    margin-left: 28px;
+  }
+  .sub_wrap .content-wrap .content-wrap-body {
+    padding: 40px 10px 40px 40px;
+  }
+  .sub_wrap .content-wrap .content-wrap-body .dashboard .item .card {
+    padding: 24px;
+  }
+  .sub_wrap .content-wrap .content-wrap-body .dashboard .item .card .card-header {
+    flex-wrap: wrap;
+  }
+  .sub_wrap .content-wrap .content-wrap-body .dashboard .item .card .card-header h3 {
+    font-size: 20px;
+  }
+  .sub_wrap .content-wrap .content-wrap-body .dashboard .item .card .card-header span {
+    display: none;
+  }
+  .sub_wrap .content-wrap .content-wrap-body .dashboard .item .card .card-header .right-info {
+    padding-top: 10px;
+  }
+  .sub_wrap .content-wrap .content-wrap-body .dashboard .item .card .card-header .right-info .today {
+    padding: 8px 10px 6px 10px;
+    font-size: 12px;
+  }
+}
